@@ -1,0 +1,523 @@
+body, html{
+  padding: 0;
+  margin: 0;
+  font-family:Arial, Helvetica, sans-serif;
+  background-color: #F8F9FA;
+  scrollbar-width: none;
+}
+
+button{
+  font-family:Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+p{
+  font-size: 14px;
+  color: gray;
+  margin: 0;
+}
+/* nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 50px;
+  padding:0 20px;
+  border-radius: 20px;
+  background-color: #FFFFFF;
+  box-shadow: 2px 4px 14px rgba(133, 133, 133, 0.037);
+}
+nav ul{
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-left: -80px;
+}
+nav ul li{
+  font-size: 16px;
+  font-weight: 500;
+  margin: 8px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: gray;
+  transition-duration: 1s;
+}
+nav ul li a:hover{ color: blueviolet; }
+
+#mobile-menu{
+  background-color: transparent;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+} */
+#contact-btn-mobile{ display: none; }
+/* .mobile-menu div{
+  width: 20px;
+  height: 3px;
+  margin: 2px;
+  background-color: gray;
+  transition-duration: 0.5s;
+  display: none;
+}
+.mobile-menu:hover.mobile-menu div{
+  rotate: 45deg;
+} */
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 50px;
+  padding:0 20px;
+  border-radius: 20px;
+  background-color: #FFFFFF;
+  box-shadow: 2px 4px 14px rgba(133, 133, 133, 0.037);
+  position: relative;
+}
+.nav-links{
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.nav-links li a{
+  text-decoration: none;
+  align-items: center;
+  color: gray;
+  transition-duration: 1s;
+  margin: 6px;
+}
+nav ul li a:hover{ color: blueviolet; }
+.menu-toggle {
+  display: none;
+}
+
+
+
+#home{
+  padding: 0 30px;
+  text-align: center;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#me{
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#my-name{
+  background-color: black;
+  color: #F8F9FA;
+  padding: 10px;
+  border-radius: 20px;
+}
+#me p{
+  border: 2px solid gray;
+  width: fit-content;
+  padding: 10px 0;
+  border-radius: 20px;
+  padding-right: 10px;
+  color: gray;
+  font-size: 12px;
+}
+#home h1{
+  font-size: 70px;
+  transition-duration: 2s;
+}
+#gradient-txt{
+  background: linear-gradient(to bottom right, rgba(132, 0, 255, 0.833), lightgreen);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.btns button, #more-about-me, #download-resume, .contact-card button{
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 6px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+#getintouch-btn, #download-resume{
+  background-color: black;
+  color: #F8F9FA;
+}
+#resume-btn, #more-about-me, .contact-card button{
+  color: black;
+  background-color: #FFFFFF;
+  box-shadow: 2px 4px 14px rgba(133, 133, 133, 0.037);
+}
+
+hr{
+  height: 1px;
+  border: 0;
+  width: 100%;
+  background-color: #c0c0c01c;
+}
+#technologies-grid{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+#technologies-grid ul{
+  list-style: none;
+}
+#technologies-grid ul li img{
+  width: 20px;
+}
+
+#about{
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.me-image{
+  background-image: url('./assets/clement.png');
+  background-position: center;
+  background-size: cover;
+  height: 120px;
+  width: 120px;
+}
+#about h1{
+  font-size: 16px;
+}
+#about #tagline{
+  margin-top: auto;
+}
+
+#projects{
+  text-align: center;
+}
+#used-tech{
+  width: fit-content;
+  background-color: rgba(128, 128, 128, 0.048);
+  color: black;
+  padding:10px 20px;
+  border-radius: 20px;
+}
+#used-tech ul{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+#used-tech li{
+  margin:0 10px;
+  transition-duration: 0.5s;
+  color: black;
+}
+#used-tech li:hover{
+  color: #FFFFFF;
+}
+.project{
+  padding: 30px;
+  background-color: rgba(128, 128, 128, 0.048);
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: space-between;
+}
+.project .project-img{
+  background-image: url('./assets/780386a48f893096ec8a84a53807ceab.jpg');
+  height: 400px;
+  width: 400px;
+  background-size: cover;
+  background-position: center;
+}
+.projects-container{
+  padding: 10px 150px;
+}
+.project-content{
+  text-align: left;
+  width: 50%;
+}
+.project-content ul{
+  list-style: none;
+  padding: 0;
+}
+.used-tech-on-project{
+  background-image: url('./assets/flutter.png');
+  background-position: center;
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+}
+
+#about-more, #contact{
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.skills-graph{
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  position: relative;
+  box-shadow: 4px 4px 16px rgba(159, 159, 159, 0.19);
+  background: linear-gradient(to top right, rgba(128, 128, 128, 0.048), rgba(255, 255, 255, 0.081));
+}
+.skill-bar-container{
+  width: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bar{
+  width: 40px;
+  border-radius: 10px;
+  background: linear-gradient(to top, transparent, rgba(132, 0, 255, 0.833));
+  margin-bottom: 10px;
+  transition-duration: 0.5S;
+}
+
+.graph, #contact-form-container{
+  border: 2px solid rgba(58, 58, 58, 0.015);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  border-radius: 20px;
+  padding: 20px;
+  background: linear-gradient(to top left, rgba(128, 128, 128, 0.048), rgba(255, 255, 255, 0));
+}
+.switch-btns button{
+  border: none;
+  border-radius: 50px;
+  padding: 10px;
+  margin: 6px;
+}
+.active-btn{ background-color: rgba(128, 128, 128, 0.422); }
+.inactive-btn{ background-color: rgba(195, 195, 195, 0.171); }
+.fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+.fade-out {
+  animation: fadeout 00.5s ease-out;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.about-more-content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: start;
+}
+.about-me-container{
+  width: 50%;
+  text-align: start;
+}
+#about-hr-line { display: none ;}
+
+.soft-skills li{ 
+  margin: 8px 0;
+  background: linear-gradient(to top left, rgba(255, 255, 255, 0.048), rgba(215, 215, 215, 0.163));
+  padding: 10px;
+  border-radius: 10px;
+}
+.first-list li{
+  background: none;
+  margin: 0;
+}
+
+.contact-card{
+  padding: 10px 30px;
+  margin: 50px 100px;
+  border-radius: 20px;
+  background-color: rgba(132, 0, 255, 0.833);
+}
+.contact-card h3{ color: #FFFFFF; }
+.contact-card p{
+  color: #f8f9fab0;
+  margin-top: -13px;
+  margin-bottom: 10px;
+}
+.contact-card button{
+  margin: 0;
+}
+#contact{
+  height: 85vh;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+#contact-info-container{
+  margin-bottom: 20px;
+}
+#contact-form-container{
+  text-align: center;
+  width: fit-content;
+}
+.contact-details-container{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+.contact-icon{
+  width: 50px;
+  height: 50px;
+  background-color: #c0c0c01c;
+  border-radius: 8px;
+}
+.contact-details{
+  margin-left: 20px;
+  margin-top: -20px;
+}
+.contact-details p{
+  margin-top: -20px;
+}
+
+form input, textarea{
+  padding: 20px;
+  margin: 5px;
+  width: 300px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(to right, rgba(128, 128, 128, 0.048), rgba(255, 255, 255, 0.081));
+  outline-color: blueviolet;
+  font-weight: bold;
+  color: black;
+}
+form button{
+  width: 340px;
+  padding: 20px;
+  margin-top: 20px;
+  background: linear-gradient(to right, rgba(128, 128, 128, 0.048), rgba(255, 255, 255, 0.081));
+  border: none;
+  color: black;
+  border-radius: 10px;
+  transition-duration: 0.5s;
+  font-weight: bold;
+}
+form button:hover{
+  background: linear-gradient(to left, rgba(128, 128, 128, 0.048), blueviolet);
+  color: #FFFFFF;
+}
+
+footer{
+  text-align: center;
+  padding: 30px;
+  background-color: #FFFFFF;
+}
+
+@media only screen and (max-width: 768px) {
+  /* nav{
+    margin:20px;
+  }
+
+
+  .nav{
+    display: none;
+    justify-content: center;
+    position: absolute;
+    right: 0px;
+    top: 70px;
+    background-color: #FFFFFF;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 2px 5px 8px rgba(133, 133, 133, 0.093);
+  } */
+  /* .mobile-menu div{ display: block;} */
+    .nav{
+      margin: 10px 30px;
+    }
+    .nav-links {
+      position: absolute;
+      justify-content: center;
+      position: absolute;
+      right: 0px;
+      top: 70px;
+      background-color: #FFFFFF;
+      width: 100%;
+      text-align: center;
+      padding: 20px 0;
+      box-shadow: 2px 5px 8px rgba(133, 133, 133, 0.093);
+    }
+
+    .nav-links.open{ display: flex; }
+    .menu-toggle { display: block; }
+
+
+  #home h1 br{display: none;}
+  #home h1{
+    font-size: 50px;
+  }
+  #about p br{ display: none;}
+  .project{ padding: 15px; }
+  .projects-container{
+    padding: 20px;
+  }
+  .project-content{ width: 100%; }
+  .graph p br{ display: none;}
+  .graph{
+    padding: 0;
+  }
+  .graph p{
+    padding:0 20px 20px 20px;
+  }
+  .about-me-container{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+  #about-hr-line { display: block ;}
+  .contact-card{
+    padding: 15px;
+    margin: 20px 15px;
+  }
+  .contact-card p{ font-size: 12px; }
+  #contact{
+    padding: 10px;
+    height: auto;
+  }
+  #contact-info-container h1{
+    text-align: center;
+  }
+  #contact-form-container{
+    width: 100%;
+  }
+  
+
+  footer{
+    padding: 30px 20px;
+  }
+}
