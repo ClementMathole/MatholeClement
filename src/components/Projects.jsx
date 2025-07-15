@@ -32,24 +32,6 @@ const Projects = () => {
                         <div className="project-img"></div>
                     </div>
                 </div>
-                {/* <div className="projects-container">
-                    <div className="project">
-                        <div className="project-content">
-                            <div className="used-tech-on-project"></div>
-                            <h2>Business Intelligence and Analytical Platform</h2>
-                            <p>A software solution that helps organizations make data driven decisions by providing insights and patterns in their data.</p>
-                            <ul>
-                                <li><span>&#10004; </span>Data Connectivity</li>
-                                <li><span>&#10004; </span>Data Modeling</li>
-                                <li><span>&#10004; </span>Reporting and Dashboard</li>
-                                <li><span>&#10004; </span>Data Analysis</li>
-                                <li><span>&#10004; </span>Predictive Analysis</li>
-                            </ul>
-                            <p>The project uses React for the frontend and ASP.NET for the backend, with features like data virtualization, reporting, and predictive analytics</p>
-                        </div>
-                        <div className="project-img"></div>
-                    </div>
-                </div> */}
             </section>
         </>
     );
